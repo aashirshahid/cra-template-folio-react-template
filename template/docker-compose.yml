@@ -1,0 +1,16 @@
+version: "2"
+services:
+    react-js-boilerplate:
+        image: react-boilerplate
+        restart: always
+        ports:
+            - "8080:8080"
+        working_dir: /react-js-boilerplate/src/app
+        volumes:
+            - ./react-js-boilerplate:/react-js-boilerplate/src/app
+        entrypoint: ["npm", "start"]
+        networks:
+            - webappnetwork
+networks:
+    webappnetwork:
+        driver: bridge

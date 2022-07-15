@@ -1,0 +1,38 @@
+{
+  "name": "folio-react-template",
+  "version": "1.0.0",
+  "keywords": [
+    "react",
+    "create-react-app",
+    "folio-react-template",
+    "template",
+    "enzyme",
+    "eslint",
+    "redux",
+    "react-redux",
+    "react-router",
+    "react-router-dom"
+  ],
+  "scripts": {
+      "clean-files": "rm -rf ./template/public ./template/src && rm -f ./template/.eslintrc",
+      "copy-files": "cp -a ./src/. template/src && cp -a ./public/. template/public && cp .eslintrc template/",
+      "prepublishOnly": "yarn clean-files && yarn copy-files"
+  },
+  "description": "The base template for Create React App.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aashirshahid/cra-template-folio-react-template.git",
+    "directory": "/"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=14"
+  },
+  "bugs": {
+    "url": "https://github.com/aashirshahid/cra-template-folio-react-template/issues"
+  },
+  "files": [
+    "template",
+    "template.json"
+  ]
+}
