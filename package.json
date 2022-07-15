@@ -18,7 +18,7 @@
       "copy-files": "cp -a ./src/. template/src && cp -a ./public/. template/public && cp .eslintrc template/",
       "prepublishOnly": "yarn clean-files && yarn copy-files"
   },
-  "description": "The base template for Create React App.",
+  "description": "A quick start Create React App template with React Router, Redux, React Hook Form, Environment Setup, Custom Webpack Configuration, Enzyme and custom ESlint configurations",
   "repository": {
     "type": "git",
     "url": "https://github.com/aashirshahid/cra-template-folio-react-template.git",
